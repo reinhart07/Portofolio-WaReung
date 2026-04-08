@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WaReung Team — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">
+      <img src="img/logo.png" alt="WaReung Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"/>
+      <span class="logo-fallback">WaReung</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Beranda</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#team">Tim</a></li>
+      <li><a href="#project">Proyek</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+    <div class="nav-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="grain"></div>
+      <div class="hero-circles">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="circle c3"></div>
+      </div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">P2MW 2026 — Bisnis Digital</div>
+      <h1 class="hero-title">
+        <span class="line">Kami Membangun</span>
+        <span class="line accent">Masa Depan</span>
+        <span class="line">Digital UMKM</span>
+      </h1>
+      <p class="hero-sub">Tim mahasiswa Informatika dari Makassar yang menciptakan <strong>WaReung</strong> — platform SaaS berbasis AI untuk digitalisasi warung dan UMKM Sulawesi Selatan.</p>
+      <div class="hero-cta">
+        <a href="#project" class="btn-primary">Lihat Proyek</a>
+        <a href="#team" class="btn-outline">Kenali Tim</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="section-tag">Tentang Kami</div>
+          <h2 class="section-title">Berawal dari<br/><em>Makassar,</em><br/>untuk Indonesia</h2>
+          <div class="about-deco"></div>
+        </div>
+        <div class="about-right">
+          <p class="about-lead">Kami adalah tim mahasiswa Informatika yang percaya bahwa teknologi seharusnya dapat diakses oleh semua orang — termasuk pemilik warung kecil di lorong-lorong Makassar.</p>
+          <p class="about-body">Melalui Program Pembinaan Mahasiswa Wirausaha (P2MW) 2026, kami membangun WaReung: sebuah platform berbasis kecerdasan buatan yang membantu warung dan UMKM mengelola usaha mereka secara digital, efisien, dan berbasis data.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">1,8 Jt</span>
+              <span class="stat-label">UMKM di Sulsel</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">10%</span>
+              <span class="stat-label">Yang sudah digital</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">5</span>
+              <span class="stat-label">Anggota tim</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Tim Kami</div>
+        <h2 class="section-title">Orang-orang di Balik<br/><em>WaReung</em></h2>
+      </div>
+      <div class="team-grid">
+
+        <div class="member-card featured">
+          <div class="member-img-wrap">
+            <img src="img/husnul.jpeg" alt="Muhammad Husnul Yaqin"
+              onerror="this.src=''; this.parentElement.classList.add('img-fallback'); this.parentElement.setAttribute('data-initial','MY')" />
+            <div class="member-img-overlay"></div>
+          </div>
+          <div class="member-info">
+            <div class="member-role">Ketua Tim · CEO</div>
+            <h3 class="member-name">Muhammad Husnul Yaqin</h3>
+            <p class="member-desc">Visioner di balik WaReung. Bertanggung jawab atas arah bisnis, pengembangan strategi, dan memastikan seluruh tim bergerak menuju satu tujuan yang sama.</p>
+            <div class="member-tags">
+              <span>Business Dev</span>
+              <span>Manajemen Proyek</span>
+              <span>Strategi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="member-img-wrap">
+            <img src="img/zalsa.jpeg" alt="Zalsa"
+              onerror="this.src=''; this.parentElement.classList.add('img-fallback'); this.parentElement.setAttribute('data-initial','ZA')" />
+            <div class="member-img-overlay"></div>
+          </div>
+          <div class="member-info">
+            <div class="member-role">UI/UX Designer</div>
+            <h3 class="member-name">Zalsa</h3>
+            <p class="member-desc">Merancang pengalaman pengguna yang intuitif dan estetis. Memastikan WaReung mudah digunakan oleh siapapun, termasuk pemilik warung yang baru mengenal teknologi.</p>
+            <div class="member-tags">
+              <span>Figma</span>
+              <span>User Research</span>
+              <span>Prototyping</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="member-img-wrap">
+            <img src="img/aditya.jpeg" alt="Adit"
+              onerror="this.src=''; this.parentElement.classList.add('img-fallback'); this.parentElement.setAttribute('data-initial','AD')" />
+            <div class="member-img-overlay"></div>
+          </div>
+          <div class="member-info">
+            <div class="member-role">CTO · Lead Developer</div>
+            <h3 class="member-name">Adit</h3>
+            <p class="member-desc">Arsitek teknis WaReung. Membangun backend, mengintegrasikan modul AI, dan memastikan platform berjalan dengan performa tinggi di cloud.</p>
+            <div class="member-tags">
+              <span>Full-stack Dev</span>
+              <span>AI/ML</span>
+              <span>Cloud</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="member-img-wrap">
+            <div class="img-fallback" data-initial="A4"></div>
+          </div>
+          <div class="member-info">
+            <div class="member-role">Marketing · Growth</div>
+            <h3 class="member-name">FRISKA SADMAN</h3>
+            <p class="member-desc">Menggerakkan pertumbuhan WaReung melalui strategi pemasaran berbasis komunitas, konten digital, dan kolaborasi dengan ekosistem UMKM lokal Makassar.</p>
+            <div class="member-tags">
+              <span>Digital Marketing</span>
+              <span>Content</span>
+              <span>Komunitas</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT -->
+  <section id="project">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Proyek Utama</div>
+        <h2 class="section-title">WaReung —<br/><em>Kasir AI untuk Warungmu</em></h2>
+      </div>
+      <div class="project-showcase">
+        <div class="project-left">
+          <div class="project-badge">P2MW 2026 · Bisnis Digital</div>
+          <p class="project-desc">Platform SaaS berbasis web dan kecerdasan buatan yang membantu pemilik warung dan UMKM di Sulawesi Selatan mengelola transaksi, stok, dan keuangan secara digital — dengan harga yang benar-benar terjangkau.</p>
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="feature-icon">◈</div>
+              <div>
+                <strong>AI Prediksi Stok</strong>
+                <p>Prediksi kebutuhan stok 7–30 hari ke depan secara otomatis</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">◈</div>
+              <div>
+                <strong>Laporan Keuangan Instan</strong>
+                <p>Laba rugi dan arus kas otomatis tanpa perlu ilmu akuntansi</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">◈</div>
+              <div>
+                <strong>Kasir Digital Real-time</strong>
+                <p>Catat setiap transaksi dengan cepat dan akurat</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">◈</div>
+              <div>
+                <strong>Analisis Produk Terlaris</strong>
+                <p>Ketahui produk terlaris per jam dan hari untuk keputusan lebih cerdas</p>
+              </div>
+            </div>
+          </div>
+          <div class="project-pills">
+            <span>SaaS</span>
+            <span>AI / ML</span>
+            <span>Web App</span>
+            <span>UMKM</span>
+            <span>Makassar</span>
+          </div>
+        </div>
+        <div class="project-right">
+          <div class="mockup-frame">
+            <div class="mockup-bar">
+              <span class="dot r"></span>
+              <span class="dot y"></span>
+              <span class="dot g"></span>
+              <span class="mockup-url">wareung.id/dashboard</span>
+            </div>
+            <div class="mockup-screen">
+              <div class="dash-header">
+                <span class="dash-logo">WaReung</span>
+                <span class="dash-greeting">Selamat datang, Pak Usman!</span>
+              </div>
+              <div class="dash-stats">
+                <div class="dash-stat">
+                  <div class="ds-label">Penjualan Hari Ini</div>
+                  <div class="ds-value">Rp 1.240.000</div>
+                  <div class="ds-trend up">↑ 12%</div>
+                </div>
+                <div class="dash-stat">
+                  <div class="ds-label">Total Transaksi</div>
+                  <div class="ds-value">47</div>
+                  <div class="ds-trend up">↑ 8%</div>
+                </div>
+                <div class="dash-stat">
+                  <div class="ds-label">Stok Menipis</div>
+                  <div class="ds-value">3 item</div>
+                  <div class="ds-trend down">⚠ Perhatian</div>
+                </div>
+              </div>
+              <div class="dash-ai">
+                <div class="ai-badge">AI Insight</div>
+                <p>Prediksi: Mie Instan akan habis dalam 2 hari. Segera restock minimal 50 bungkus.</p>
+              </div>
+              <div class="dash-chart">
+                <div class="bar-wrap">
+                  <div class="bar" style="height:60%"><span>Sen</span></div>
+                  <div class="bar" style="height:80%"><span>Sel</span></div>
+                  <div class="bar" style="height:45%"><span>Rab</span></div>
+                  <div class="bar" style="height:90%"><span>Kam</span></div>
+                  <div class="bar active" style="height:75%"><span>Jum</span></div>
+                  <div class="bar" style="height:55%"><span>Sab</span></div>
+                  <div class="bar" style="height:40%"><span>Min</span></div>
+                </div>
+                <div class="chart-label">Penjualan Minggu Ini</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-wrap">
+        <div class="contact-left">
+          <div class="section-tag">Kontak</div>
+          <h2 class="section-title">Mari<br/><em>Berkolaborasi</em></h2>
+          <p>Tertarik dengan WaReung atau ingin tahu lebih lanjut tentang tim kami? Jangan ragu untuk menghubungi kami.</p>
+          <div class="contact-info">
+            <div class="ci-item">
+              <span class="ci-icon">✉</span>
+              <span>wareung@gmail.com</span>
+            </div>
+            <div class="ci-item">
+              <span class="ci-icon">◎</span>
+              <span>Makassar, Sulawesi Selatan</span>
+            </div>
+            <div class="ci-item">
+              <span class="ci-icon">◉</span>
+              <span>Program P2MW 2026 — Bisnis Digital</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <input type="text" placeholder="Nama Anda" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email Anda" required />
+            </div>
+            <div class="form-group">
+              <textarea rows="5" placeholder="Pesan Anda..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary full">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="img/Logo WaReung.png" alt="WaReung" onerror="this.style.display='none'" />
+          <span>WaReung</span>
+        </div>
+        <p class="footer-tagline">Berawal dari satu warung,<br/>berdampak untuk Indonesia Timur.</p>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Tim WaReung — P2MW Kemendikti</span>
+        <span>Makassar, Sulawesi Selatan</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
